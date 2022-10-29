@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const geometry = new THREE.PlaneGeometry(0.95, 1.95);
     const material = new THREE.MeshBasicMaterial({map: texture});
     const plane = new THREE.Mesh(geometry, material);
-
+    const {renderer, scene, camera} = mindarThree;
     const anchor = mindarThree.addAnchor(0);
     anchor.group.add(plane);
 
