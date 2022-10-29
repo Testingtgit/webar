@@ -4,7 +4,7 @@
     
    
     <style>
-      html, body {position: relative; margin: 0; width: 100%; height: 100%; overflow: hidden;}
+      html, body {position: absolute; margin: 0; width: 100%; height: 100%; overflow: hidden;}
       #ar-div{
           width:1200px;
           height:1600px;
@@ -13,12 +13,13 @@
           
           background: transparent;
           opacity: 0.9f;
-          font-size: 100px;
-          display: inline-flex;
+          font-size: 1.25em;
+          display: flex;
           align-items:flex-start;
           color:transparent;
           font-weight:bold;
           text-decoration: none;
+          z-index: 9999;
           border: none;
           
           
@@ -29,7 +30,7 @@
       
       #newimage{
           display: none;
-          position:absolute;
+          position:relative;
           left: 350px;
       }
       
