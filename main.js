@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const video = await loadVideo("Transavation-Final.mp4");
     const texture = new THREE.VideoTexture(video);
 
-    const geometry = new THREE.PlaneGeometry(1, 2);
+    const geometry = new THREE.PlaneGeometry(1, 1.98);
     const material = new THREE.MeshBasicMaterial({map: texture});
     const plane = new THREE.Mesh(geometry, material);
     const anchor = mindarThree.addAnchor(0);
